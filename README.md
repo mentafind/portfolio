@@ -14,8 +14,9 @@ Portfolio Website created by Alex Wang. Contains projects from Feb 2022 - Jan 20
 
 📒 <u>**Other Notes**</u>
 > Languages used: HTML, CSS, JavaScript <br>
-> This website is not hosted online.
+> This website is hosted online at <a href="https://mentafind.xyz">mentafind.xyz</a>
 
 🖼️ <u>**Screenshots**</u>
 > <img src="assets/READ ME/1.png" style="width: calc(33.3333% - 15px); margin: 7.5px; float: left;"> <img src="assets/READ ME/2.png" style="width: calc(33.3333% - 15px); margin: 7.5px;"> <img src="assets/READ ME/3.png" style="width: calc(33.3333% - 15px); margin: 7.5px; float: right;">
-> <img src="assets/READ ME/4.png" style="width: calc(33.3333% - 15px); margin: 7.5px; float: left;"> <img src="assets/READ ME/6.png" style="width: calc(33.3333% - 15px); margin: 7.5px;"> <img src="assets/READ ME/7.png" style="width: calc(33.3333% - 15px); margin: 7.5px; float: right;">
+> <img src="assets/READ ME/4.png" style="width: calc(33.3333% - 15px); margin: 7.5px; float: left;"> <img src="assets/READ ME/5.png" style="width: calc(33.3333% - 15px); margin: 7.5px;"> <img src="assets/READ ME/6.png" style="width: calc(33.3333% - 15px); margin: 7.5px; float: right;">
+> <img src="assets/READ ME/7.png" style="width: calc(33.3333% - 15px); margin: 7.5px; float: left;">
