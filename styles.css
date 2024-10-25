@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    place-content: center;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 50%),
+        rgba(255, 255, 255, 50%) 100%
+    ),
+    url(assets/home\ page/h1background.jpg);
+
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    height: 400px;
+    width: auto;
+    display: grid;
+    place-content: center;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 50%),
+        rgba(255, 255, 255, 50%) 100%
+    ),
+    url(assets/home\ page/h1background.jpg);
+
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+
+main {
+    margin-top: -15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 90px;
+    font-weight: 300;
+}
+
+h2 {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: -34px;
+}
+
+h3 {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: -3px;
+    text-align: left;
+}
+
+h4 {
+    color: black;
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: -3px;
+    text-align: left;
+}
+
+p {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+button {
+    color: #a09aff;
+    border: 1px solid;
+    border-color: #a09aff;
+    border-radius: 5px;
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #f1efff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: auto;
+    left: 10px;
+    text-decoration: none;
+}
+
+.scroll-down-button {
+    all: unset;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50vw - 35px);
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 50%;
+    transition: .3s;
+}
+
+.scroll-down-button:hover {
+    background-color: #f1efff80;
+    opacity: 100%;
+}
+
+.scroll-down-button .arrow-down {
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #2d2c33;
+    border-left: 2px solid #2d2c33;
+    transform: rotate(-45deg);
+    margin-top: -14px;
+    pointer-events: none;
+}
