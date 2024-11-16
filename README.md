@@ -7,7 +7,7 @@ Portfolio Website created by Alex Wang. Contains projects from Feb 2022 - Jan 20
 > 
 > For the summative project, we created a portfolio website containing all the projects we worked on over the course of the semester. To build my grade 12 portfolio, I expanded off my grade 11 portfolio and created a new grade 12 section. 
 > 
-> Since then, I have updated the information in this website, summarised the digital media sections, and added a new sections regarding my musical experiences and coding experiences.
+> Since then, I have updated the information in this website, summarised the digital media sections, and added new sections regarding my musical experiences and coding experiences.
 
 📚 <u>**Purpose**</u>
 > The purpose of building this website was to learn how to use HTML and CSS. This is the first website I have ever built using code. After following a few tutorials explaining the basic features of HTML and CSS, I jumped straight into building this website. I chose to recreate my high school portfolio because I had already designed all the pages, which would allow me to focus on the coding aspect of this project.
