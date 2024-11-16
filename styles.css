@@ -102,7 +102,7 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
 }
 
 button:hover {
@@ -136,7 +136,7 @@ ul {
     justify-content: center;
     cursor: pointer;
     opacity: 50%;
-    transition: .3s;
+    transition: .4s;
 }
 
 .scroll-down-button:hover {
@@ -152,4 +152,34 @@ ul {
     transform: rotate(-45deg);
     margin-top: -14px;
     pointer-events: none;
+}
+
+.container {
+    position: relative;
+}
+
+.codelogo {
+    opacity: 1;
+    display: block;
+    height: 120px;
+    transition: .4s;
+    backface-visibility: hidden;
+}
+
+.codelogotext {
+    transition: .4s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .codelogo {
+    opacity: 0.2;
+}
+
+.container:hover .codelogotext {
+    opacity: 1;
 }
