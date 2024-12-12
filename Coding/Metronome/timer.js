@@ -1,36 +1,52 @@
 function Timer(callback, timeInterval, options) {
     this.timeInterval = timeInterval;
-
+    this.callback = callback;
+    this.options = options;
+    this.started = false;
+   
     this.start = () => {
-        this.expected = Date.now() + this.timeInterval;
-        this.theTimeout = null;
-
-        if (options.immediate) {
-            callback();
+        if (this.started) {
+            console.log('Timer already running');
+            return;
         }
-
-        this.timeout = setTimeout(this.round, this.timeInterval);
+        
+        this.started = true;
+        this.startTime = performance.now();
+        this.lastTime = this.startTime;
+        if (this.options.immediate) {
+            this.callback();
+        }
+        this.frameRequest = requestAnimationFrame(this.run.bind(this));
         console.log('Timer Started');
     }
 
     this.stop = () => {
-        clearTimeout(this.timeout);
+        if (!this.started) {
+            console.log('Timer not running');
+            return;
+        }
+        
+        this.started = false;
+        cancelAnimationFrame(this.frameRequest);
         console.log('Timer Stopped');
     }
 
-    this.round = () => {
-        console.log('timeout', this.timeout);
-        let drift = Date.now() - this.expected;
-        if (drift > this.timeInterval) {
-            if (options.errorCallback) {
-                options.errorCallback();
+    this.run = (currentTime) => {
+        if (!this.started) return;
+
+        const timeElapsed = currentTime - this.lastTime;
+        if (timeElapsed >= this.timeInterval) {
+            const drift = timeElapsed - this.timeInterval;
+            this.callback();
+            this.lastTime = currentTime - drift;
+
+            console.log('Drift:', drift);
+            if (drift > this.timeInterval && this.options.errorCallback) {
+                this.options.errorCallback();
             }
         }
-        callback();
-        this.expected += this.timeInterval;
-        console.log('Drift:', drift);
-        console.log('Next round time interval:', this.timeInterval - drift);
-        this.timeout = setTimeout(this.round, this.timeInterval - drift);
+
+        this.frameRequest = requestAnimationFrame(this.run.bind(this));
     }
 }
 
