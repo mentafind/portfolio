@@ -55,7 +55,6 @@ addBeats.addEventListener('click', () => {
 });
 
 startStopBtn.addEventListener('click', () => {
-    count = 0;
     if (!isRunning) {
         metronome.start();
         isRunning = true;
@@ -64,6 +63,7 @@ startStopBtn.addEventListener('click', () => {
         metronome.stop();
         isRunning = false;
         startStopBtn.textContent = 'START'
+        count = 0;
     }
 })
 
