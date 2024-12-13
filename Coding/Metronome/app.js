@@ -40,14 +40,18 @@ subtractBeats.addEventListener('click', () => {
     if (beatsPerMeasure <= 0) { return }
     beatsPerMeasure--;
     measureCount.textContent = beatsPerMeasure;
-    count = 0;
+    if (count >= beatsPerMeasure) {
+        count = 0;
+    } else { return }
 });
 
 addBeats.addEventListener('click', () => {
     if (beatsPerMeasure >= 16) { return }
     beatsPerMeasure++;
     measureCount.textContent = beatsPerMeasure;
-    count = 0;
+    if (count >= beatsPerMeasure) {
+        count = 0;
+    } else { return }
 });
 
 startStopBtn.addEventListener('click', () => {
